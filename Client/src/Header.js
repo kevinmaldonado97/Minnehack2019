@@ -1,12 +1,8 @@
 import React, { Component } from 'react'
-
 import Movie from './Movie'
-
 import './main.css'
 
 export default class Header extends Component {
-
-
 
   render() {
     return(

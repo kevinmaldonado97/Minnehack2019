@@ -1,3 +1,6 @@
 .movie-db-container {
   background-color: lightgray;
 }
+
+.movie:nth-child() {
+}

@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import Button from './Button'
+
 export default class SearchBar extends Component {
 
   state = {
@@ -10,10 +12,15 @@ export default class SearchBar extends Component {
       return this.state.value;
   }
 
+  onChange(event){
+    console.log(event);
+    // this.setState({value:})
+  }
+
   render() {
     return <div>
-        <input className="movie-db-searchbar" placeholder="Search" type='text'></input>
-        <button className="movie-db-searchsubmit" onClick={this.onSubmit}>Submit</button>
+        <input className="movie-db-searchbar" onChange={this.onChange} placeholder="Search" type='text'></input>
+        <Button onClick={this.onSubmit} color="Green">Submit</Button>
       </div>
   }
 }

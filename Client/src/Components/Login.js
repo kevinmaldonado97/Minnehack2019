@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import './Components/Login.css'
+import './Login.css'
 
 export default class Login extends Component {
   handleSubmit(e) {
@@ -8,30 +8,26 @@ export default class Login extends Component {
   }
 
   login() {
-    console.log(2);
+    console.log(2)
   }
 
   render() {
     return (
-    <div className="movie-db-login">
-        <h1>
-            Aviato Movie Database
-        </h1>
-        <h3>
-            Please login
-        </h3>
+      <div className="movie-db-login">
+        <h1>Aviato Movie Database</h1>
+        <h3>Please login</h3>
         <form id="login" onClick={this.login} onSubmit={this.handleSubmit}>
-            <label id="email">
-                Email: 
-                <input type="text" name="email" />
-            </label>
-            <label id="pass">
-                Password: 
-                <input type="text" name="password" />
-            </label>
-            <input type="submit" value="Login"/>
+          <label id="email">
+            Email:
+            <input type="text" name="email" />
+          </label>
+          <label id="pass">
+            Password:
+            <input type="text" name="password" />
+          </label>
+          <input type="submit" value="Login" />
         </form>
-    </div>
+      </div>
     )
   }
 }

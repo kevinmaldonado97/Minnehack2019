@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import SearchBar from './SearchBar'
 import Button from './Button'
 
-import './main.css'
+import './Movies.css'
 
 export default class Header extends Component {
   render() {

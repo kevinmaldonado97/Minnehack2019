@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
-import './main.css'
 
-import Button from './Button'
 import SearchBar from './SearchBar'
+import Button from './Button'
+
+import './main.css'
 
 export default class Header extends Component {
   render() {

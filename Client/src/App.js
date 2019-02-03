@@ -1,29 +1,12 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
-import Home from './Components/Home'
-import Login from './Components/Login'
+import ContractItem from './Components/ContractItem'
 
-import './main.css'
-
+import ContractList from './Components/ContractList'
 export default class App extends Component {
-  state = {
-    movies: null
-  }
-
-  // componentWillMount() {
-  //   const response = api.get('/movies')
-  //   this.setState({ movies: response.data })
-  // }
 
   render() {
-    return (
-      <Router>
-        <>
-          <Route push to="/login" component={Login} />
-          <Route push to="/" component={Home} />
-        </>
-      </Router>
-    )
+    return <ContractList></ContractList>
   }
 }
